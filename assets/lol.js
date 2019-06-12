@@ -16,7 +16,6 @@ var leagueCharacter = [
     image: "assets/image/Alistar.png"
   }
 ]
-// "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "AurelionSol", "Azir", "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Camille", "Cassiopeia", "ChoGath", "Corki", "Darius", "Diana", "DrMundo", "Draven", "Ekko", "Elise", "Evelynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "Gangplank", "Garen", "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern", "Janna", "Jarvan", "Jax", "Jayce", "Jhin", "Jinx", "KaiSa", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kayn", "Kennen", "KhaZix", "Kindred", "Kled", "KogMaw", "LeBlanc", "LeeSin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai", "MasterYi", "MissFortune", "Mordekaiser", "Morgana", "Nami", "Nasus", "Nautilus", "Neeko", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna", "Ornn", "Pantheon", "Poppy", "Pyke", "Quinn", "Rakan", "Rammus", "RekSai", "Renekton, Rengar", "Riven", "Rumble", "Ryze", "Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sio", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Sylas", "Syndra", "TahmKench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "TwistedFate", "Twitch", "Udyr", "Urgot", "Varus", "Vayne", "Veigar", "VelKoz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Wukong", "Xayah", "Xerath", "XinZhao", "Yasuo", "Yorick", "Yuumi", "Zac", "Zed", "Ziggs", "Zilean", "Zoo", "Zyra"
 
 // Number of "_" to print
 var numberOfBlanks = 0;
@@ -63,10 +62,6 @@ function win() {
   document.getElementById("winStreak").innerHTML = wins;
   // Restarts the game
   leagueGame.start();
-}
-
-function alreadyGussed() {
-  document.getElementById("message").innerHTML = "You already guessed this letter"
 }
 
 // Method that updates the screen if user didn't guess the character
@@ -153,6 +148,7 @@ leagueGame.start();
 document.addEventListener("keyup", function(event) {
   // Storing the key that the user pressed and change it to lower case incase user types in caps lock.
   lettersGuessed = String.fromCharCode(event.which).toLowerCase();
+  document.getElementById("message").innerHTML = 'Keep Trying Wood5'
   leagueGame.checker(lettersGuessed);
   leagueGame.finish();
 });

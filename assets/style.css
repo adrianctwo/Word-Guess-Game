@@ -1,0 +1,41 @@
+.row {
+    margin-top: 50px;
+    color: white;
+    font-size: 26px;
+}
+
+.hint {
+    font-size: 30px;
+    color: white;
+}
+
+.start {
+    font-size: 30px;
+    color: white;
+}
+
+.text-center {
+    background-image:url("image/banner\ 2.jpg");
+    background-size:cover;
+    background-size: no-repeat;
+}
+
+.jumbotron {
+    background-image: url("image/Simple-Background-Images-25.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+.footers {
+    text-align: center;
+    color: white;
+    background-image: url("image/footer.jpg");
+    margin: 0;
+    padding: 20px;
+}
+
+.footers p{
+    margin-top: 10px;
+
+}
