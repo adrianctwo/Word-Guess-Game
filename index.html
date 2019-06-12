@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
     <header>
-        <div id="headerBanner">
+        <div class="logo">
+            <img class="img-fluid" src="assets/image/banner1.jpg" alt="leagueOfLegend Banner"/>
         </div>
     </header>
-    
-    <div id="main">
 
-        <section id="guessSction">
-            <P id="start">Press any key to get started!</P>
-        </section>
-
-        <section id="wins">
-            <p>Wins: </p> <span id="winStreak">0</span>
-        </section>
-
-        <section id="guess">
-            <p id="guessWord">_____</p>
-        </section>
-
-        <section id="results">
-            <div id="guessLeft">
-                <P>Number of Guesses Remaining: </P> <span id="guessRemain">20</span>
+    <div class="text-center">
+        <div class = "container">
+            <div class = "jumbotron">
+                <section class="start">
+                    <p id="message">Press any button to begin!</p>
+                </section>
+                <section class="hint">
+                        <strong>Name the Following League of Legends Character</strong>
+                        <br><br>
+                        <img src"" id="hints" alt=""/>
+                </section>
+                <div class = "row">
+                    <div class = "col-md-6 mr-auto">
+                        <section class="guessSection">
+                            <h2>Current Guess:</h2>
+                            <h3 id="characterName">_ _ _ _ _ _ _ _ _ </h3>
+                        </section>
+                    </div>
+                    <div class = "cold-md-6 mr-auto">
+                        <div class="wrong">
+                            <strong>Wrong Guesses: </strong> <span id="wrongGuess"></span>
+                        </div>
+                        <div class="guesses">
+                            <strong>Guesses Left: </strong> <span id="guessRemain">15</span>
+                        </div>
+                        <div class="wins">
+                                <strong>Wins: </strong> <span id="winStreak">0</span>
+                        </div>
+                        <div class="losses">
+                            <strong>Losses: </strong> <span id="loseStreak">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div id="alreadyGuessed">
-                <p>Letters already guessed: </p> <span id="lettersGuessed"></span>
-            </div>
-        </section>
-
+        </div>
     </div>
-    <script src="assets/javascript/javascript.js"></script>
+
+    <script src="assets/lol.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>
