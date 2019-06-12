@@ -16,7 +16,7 @@ var leagueCharacter = [
     image: "assets/image/Alistar.png"
   }
 ]
-
+// what
 // Number of "_" to print
 var numberOfBlanks = 0;
 // Check if user guessed the name of character
