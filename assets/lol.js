@@ -1,7 +1,7 @@
 var leagueCharacter = [
   {
     name: "aatrox",
-    image: "assets/image/aatrox.jpg"
+    image: "assets/image/Aatrox.png"
   },
   {
     name: "ahri",
