@@ -58,7 +58,7 @@ function hint() {
 function win() {
   // Win counter is updated by +1
   wins++;
-  document.getElementById("message").innerHTML = 'You Win!';
+  document.getElementById("message").innerHTML = 'PENTA KIll';
   document.getElementById("winStreak").innerHTML = wins;
   // Restarts the game
   leagueGame.start();
@@ -67,7 +67,7 @@ function win() {
 // Method that updates the screen if user didn't guess the character
 function lose() {
   losses++;
-  document.getElementById("message").innerHTML = 'You Lose!';
+  document.getElementById("message").innerHTML = 'STOP FEEDING!';
   document.getElementById("loseStreak").innerHTML = losses;
   // Restarts the game
   leagueGame.start();
